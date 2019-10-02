@@ -6,10 +6,10 @@ OBJ=main.o algorithms.o list.o game.o
 %.o: %.c $(DEPS)
 	$(CC) $(CFLAGS) -c -o $@ $< 
 
-homework1: $(OBJ)
+puzzlesolver: $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^ 
 
 .PHONY: clean
 
 clean:
-	rm *.o homework1
+	rm *.o puzzlesolver
